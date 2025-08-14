@@ -1,0 +1,24 @@
+def get_num_words(text):
+	words = text.split()
+	num_words = len(words)
+	return num_words
+def characters_count(text):
+	characters = {}
+	lower_case_text = text.lower()
+	for character in lower_case_text:
+		if character in characters:
+			characters[character] += 1
+		else:
+			characters[character] = 1
+	return characters
+def characters_report(characters_count):
+	characters = []
+	for character, count in characters_count.items():
+		characters.append({"char": character, "num": count})
+	characters.sort(reverse=True, key=lambdadef characters_report(characters_count):
+        characters = []
+        for character, count in characters_count.items():
+                characters.append({"char": character, "num": count})
+        characters.sort(reverse=True, key=lambda, item: item["num"])
+        return characters item: item["num"])
+	return characters
